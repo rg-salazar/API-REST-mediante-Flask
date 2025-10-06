@@ -22,11 +22,15 @@ Este proyecto simula el despliegue de un modelo predictivo para una fintech o st
 
 ## Instalación y ejecución local
 1. **Clonar repositorio**
-```bash
+
 git clone <URL_DEL_REPOSITORIO>
 cd project
+Construir la imagen Docker
+
 
 docker build -t modelo-predictivo .
+Ejecutar el contenedor
+
 
 docker run -p 5000:5000 modelo-predictivo
 
@@ -34,7 +38,28 @@ Probar la API
 
 Endpoint de predicción: POST /predict
 
-Ejemplo de request con curl:
+
+curl -X POST http://localhost:5000/predict \
+-H "Content-Type: application/json" \
+-d '{"feature1": 10, "feature2": 5, "feature3": 1}'
+Testing
+Ejecuta pruebas automatizadas con:
 
 
-## Estructura del proyecto
+Esto permite verificar que la API responde correctamente y que el modelo predice según lo esperado.
+
+Buenas prácticas aplicadas
+Versionado de código con Git
+
+Contenerización para reproducibilidad
+
+Documentación de endpoints y flujo de datos
+
+Pruebas automatizadas para asegurar la estabilidad
+
+Futuras mejoras
+Implementar autenticación para la API
+
+Manejo de logs y métricas de uso
+
+Integración con bases de datos para predicciones en lote
