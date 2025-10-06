@@ -1,5 +1,11 @@
 # Despliegue Local de Modelo Predictivo con Flask y Docker
 
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
 ## Objetivo
 Desarrollar un sistema completo que integre un modelo de Machine Learning (clasificación o regresión), exponerlo como API REST mediante Flask, y contenedorizado con Docker. Se espera demostrar buenas prácticas de versionado, empaquetado y documentación, así como un flujo básico de pruebas automatizadas.
 
