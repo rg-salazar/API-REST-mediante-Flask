@@ -28,38 +28,49 @@ cd project
 Construir la imagen Docker
 
 
+## Construcción y ejecución del contenedor
+
+```bash
+# 1. Construir la imagen Docker
 docker build -t modelo-predictivo .
-Ejecutar el contenedor
 
-
+# 2. Ejecutar el contenedor
 docker run -p 5000:5000 modelo-predictivo
 
-Probar la API
-
-Endpoint de predicción: POST /predict
-
-
+# 3. Probar la API
+# Endpoint de predicción: POST /predict
 curl -X POST http://localhost:5000/predict \
 -H "Content-Type: application/json" \
 -d '{"feature1": 10, "feature2": 5, "feature3": 1}'
-Testing
-Ejecuta pruebas automatizadas con:
 
+# 4. Testing
+# Ejecuta pruebas automatizadas con:
+pytest tests/
 
-Esto permite verificar que la API responde correctamente y que el modelo predice según lo esperado.
+# Esto permite verificar que la API responde correctamente 
+# y que el modelo predice según lo esperado.
 
-Buenas prácticas aplicadas
-Versionado de código con Git
+# --- Buenas prácticas aplicadas ---
+# - Versionado de código con Git
+# - Contenerización para reproducibilidad
+# - Documentación de endpoints y flujo de datos
+# - Pruebas automatizadas para asegurar la estabilidad
 
-Contenerización para reproducibilidad
+# --- Futuras mejoras ---
+# - Implementar autenticación para la API
+# - Manejo de logs y métricas de uso
+# - Integración con bases de datos para predicciones en lote
 
-Documentación de endpoints y flujo de datos
+# --- Cómo cerrar la consola Bash ---
+# Una vez finalizadas las pruebas, puedes cerrar la terminal Bash con:
+exit
+# o presionando:
+# Ctrl + D
 
-Pruebas automatizadas para asegurar la estabilidad
+# Si estás ejecutando un contenedor Docker en modo interactivo, 
+# 'exit' te sacará del contenedor, pero no lo detendrá.
+# Para detenerlo completamente:
+docker stop NOMBRE_DEL_CONTENEDOR
 
-Futuras mejoras
-Implementar autenticación para la API
-
-Manejo de logs y métricas de uso
-
-Integración con bases de datos para predicciones en lote
+# Antes de cerrar, asegúrate de detener cualquier proceso activo (por ejemplo, un servidor Flask)
+# presionando Ctrl + C
