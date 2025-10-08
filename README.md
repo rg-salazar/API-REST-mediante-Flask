@@ -15,7 +15,6 @@ Este proyecto simula el despliegue de un modelo predictivo para una fintech o st
 - Escalable localmente mediante contenedores
 - Fácil de actualizar
 - Accesible vía REST
-- Documentado y probado con pruebas automatizadas
 
 ## Tecnologías utilizadas
 - **Python**: Lenguaje principal del proyecto  
