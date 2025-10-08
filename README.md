@@ -7,7 +7,7 @@
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
 ## Objetivo
-Desarrollar un sistema completo que integre un modelo de Machine Learning (clasificación o regresión), exponerlo como API REST mediante Flask, y contenedorizado con Docker. Se espera demostrar buenas prácticas de versionado, empaquetado y documentación, así como un flujo básico de pruebas automatizadas.
+Desarrollar un sistema completo que integre un modelo de Machine Learning (clasificación o regresión), exponerlo como API REST mediante Flask, y contenedorizado con Docker. Se espera demostrar buenas prácticas de versionado, empaquetado y documentación.
 
 ## Contexto
 Este proyecto simula el despliegue de un modelo predictivo para una fintech o startup de salud, permitiendo integrar un modelo de predicción (por ejemplo, scoring de crédito o diagnóstico preventivo) dentro de su infraestructura tecnológica. El servicio desarrollado busca ser:
